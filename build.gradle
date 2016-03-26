@@ -1,0 +1,26 @@
+group 'simpleJVM'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceSets {
+    main { java.srcDirs = ['src/main/java'] }
+    test { java.srcDirs = ['src/test/java'] }
+}
+
+sourceCompatibility = 1.8
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'simpleJVM'
+    }
+}
+
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.11'
+}
