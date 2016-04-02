@@ -1,2 +1,10 @@
 # simpleJVM
-a java virtual machine for study and reserch.
+
+simpleJVM a java virtual machine based on [openJDK7](http://openjdk.java.net/). And our goal is to supply a **small and all-inclusive** JVM for study and research.
+
+
+### Why use Java to implement a JVM?
+
+As I said before, the goals for simpleJVM is not efficiency, and it can not take place of [Hotspot](http://www.oracle.com/technetwork/java/javase/tech/index-jsp-136373.html). We expect that simpleJVM has a excellent readability， and easy to hack.
+
+
