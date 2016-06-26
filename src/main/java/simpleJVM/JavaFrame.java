@@ -33,4 +33,17 @@ public class JavaFrame implements Frame
   {
     return this.stack.peek();
   }
+
+  @Override
+  public JavaType.T load(int x)
+  {
+    return locals.get(x);
+  }
+
+  @Override
+  public void store(int idx, JavaType.T v)
+  {
+    locals.set(idx, v);
+  }
+
 }

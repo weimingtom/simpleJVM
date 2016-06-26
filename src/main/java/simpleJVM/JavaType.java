@@ -12,7 +12,7 @@ class JavaType
 
   public static class _Int extends T
   {
-    int value;
+    public int value;
 
     public _Int(int value)
     {
@@ -22,7 +22,7 @@ class JavaType
 
   public static class _Boolean extends T
   {
-    boolean value;
+    public boolean value;
 
     public _Boolean(boolean value)
     {
@@ -32,7 +32,7 @@ class JavaType
 
   public static class _Double extends T
   {
-    double value;
+    public double value;
 
     public _Double(double value)
     {
@@ -42,7 +42,7 @@ class JavaType
 
   public static class _Long extends T
   {
-    long value;
+    public long value;
 
     public _Long(long value)
     {

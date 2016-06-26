@@ -11,6 +11,9 @@ interface Frame
 
   JavaType.T peek();
 
+  JavaType.T load(int x);
+
+  void store(int idx, JavaType.T v);
 
 
 }

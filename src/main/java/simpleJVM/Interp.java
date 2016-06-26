@@ -25,6 +25,11 @@ class Interp
           break;
         case ByteCode.OPC_RETURN :
           return null;
+        case ByteCode.OPC_IADD:
+          JavaType._Int v1 = (JavaType._Int) env.pop();
+          JavaType._Int v2 = (JavaType._Int) env.pop();
+          env.push(new JavaType._Int(v1.value+v2.value));
+          break;
       }
     }
   }
